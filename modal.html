@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <link rel="stylesheet" href="style.css">
+
+        <title>Responsive Modal Popup</title>
+    </head>
+    <body>
+        
+        <section class="modal container">
+
+
+            <button class="modal__button" id="open-modal">
+              next
+            </button>
+            <form action="index.html" autocomplete="off" class="sign-in-form">
+                <div class="logo">
+                  <img src="./img/logo.png" alt="easyclass" />
+                  <h4>BM play</h4>
+                </div>
+  
+                <div class="heading">
+                  <h2>we sent you a code</h2>
+                  <h6>i did not have a code?</h6>
+                  <a href="#" class="toggle"><a href="index.html">back</a></a>
+                </div>
+  
+               
+  
+                  <div class="input-wrap">
+                    <input
+                      type="text"
+                      minlength="4"
+                      class="input-field"
+                      autocomplete="off"
+                      required
+                    />
+                    <label> <ion-icon name="lock-closed-outline"></ion-icon> code verification</label>
+                  </div>
+                  <p>plaece enter the verification code sent by email</p>
+                  
+                </div>
+              </form>
+              <div class="text-slider">
+                <div class="text-wrap">
+                  <div class="text-group">
+                    <h2>Create your BM  play</h2>
+                    <h2>play online and earn money</h2>
+                    <h2>join a community</h2>
+                  </div>
+                </div>
+  
+                <div class="bullets">
+                  <span class="active" data-value="1"></span>
+                  <span data-value="2"></span>
+                  <span data-value="3"></span>
+                </div>
+              </div>
+
+            <div class="modal__container" id="modal-container">
+                <div class="modal__content">
+                    <div class="modal__close close-modal" title="Close">
+                        <i class='bx bx-x'></i>
+                    </div>
+
+                    <img src="img/logo.png" alt="" class="modal__img">
+
+                    <h1 class="modal__title">registration finished</h1>
+                    <p class="modal__description">Click on the next button to continue</p>
+
+                    <button class="modal__button modal__button-width">
+                        next
+                    </button>
+
+                    <button class="modal__button-link close-modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+        <script src="apps.js"></script>
+    </body>
+</html>
